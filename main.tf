@@ -1,7 +1,7 @@
 provider "aws" {
-  access_key = ACCESS_KEY
-  secret_key = SECRET_KEY
-  region     = REGION
+  access_key = TF_VAR_ACCESS_KEY
+  secret_key = TF_VAR_SECRET_KEY
+  region     = TF_VAR_REGION
 }
 
 resource "aws_security_group" "sg_example" {
